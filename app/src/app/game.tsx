@@ -28,8 +28,9 @@ export default function Game() {
 
       {/* this should probably float in & disappear */}
       <p className="text-lg text-green-500 font-semibold">You guessed correctly!</p>
-
+      
       <button className="mt-6 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">Restart Game</button>
+      <button className="mt-6 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600" onClick={()=>setBasicMode(!basicMode)}>Toggle Game Mode</button>
     </div>
      
   )
